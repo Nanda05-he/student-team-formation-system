@@ -1,5 +1,5 @@
 import pandas as pd
-from db_connection import get_connection
+from backend.db_connection import get_connection
 
 def ensure_tables(cursor):
     """Create the HACKATHON_STUDENTS table if it doesn't already exist.

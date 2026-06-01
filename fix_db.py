@@ -7,8 +7,8 @@ load_dotenv()
 try:
     connection = oracledb.connect(
         user=os.environ.get("ORACLE_USER", "system"),
-        password=os.environ.get("ORACLE_PASSWORD", "system123"),
-        dsn=os.environ.get("ORACLE_DSN", "localhost:1521/XEPDB1")
+        password=os.environ.get("ORACLE_PASSWORD", "dbms123"),
+        dsn=os.environ.get("ORACLE_DSN", "localhost/XE")
     )
     cursor = connection.cursor()
     
